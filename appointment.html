@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment | Anuoluwapo Maternity Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Anuoluwapo Maternity Hospital
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="appointment-page">
+
+        <section class="page-heading">
+            <h1>Book an Appointment</h1>
+
+            <p>
+                Schedule a visit with our medical team.
+                We are ready to care for you and your family.
+            </p>
+        </section>
+
+        <section class="appointment-container">
+
+            <form data-form="appointments">
+
+                <h2>Patient Information</h2>
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Choose Department</label>
+
+                    <select id="department" name="department" required>
+                        <option value="">Select a department</option>
+                        <option value="maternity">Maternity Care</option>
+                        <option value="antenatal">Antenatal Care</option>
+                        <option value="postnatal">Postnatal Care</option>
+                        <option value="paediatrics">Paediatrics</option>
+                        <option value="general">General Consultation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+
+                    <input
+                        type="time"
+                        id="time"
+                        name="time"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us anything we should know"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="auth-btn">
+                    Submit Appointment
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Anuoluwapo Maternity Hospital.
+            All rights reserved.
+        </p>
+
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
